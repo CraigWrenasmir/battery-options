@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Paths Forward · Battery Options · for Craig &amp; Teresa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4ecd8;
+    --paper-warm: #f8f1de;
+    --paper-deep: #ead9b3;
+    --ink: #1a140e;
+    --ink-soft: #4a3a2a;
+    --ink-faded: #8a7a64;
+    --terracotta: #b84a1c;
+    --terracotta-deep: #8a3414;
+    --rust: #6f2818;
+    --sage: #5b6e4f;
+    --sage-deep: #3f4f36;
+    --gold: #a87a2a;
+    --neutral: #9d9385;
+    --line: #d4c29a;
+    --line-soft: #e3d6b5;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: clamp(16.5px, 1.55vw, 18.5px);
+    line-height: 1.65;
+    font-weight: 380;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    background-image:
+      radial-gradient(circle at 15% 25%, rgba(184, 74, 28, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 85% 75%, rgba(91, 110, 79, 0.07) 0%, transparent 50%),
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.04 0 0 0 0 0.07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+  }
+
+  ::selection { background: var(--terracotta); color: var(--paper); }
+
+  .page {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 48px) clamp(18px, 4vw, 40px) 80px;
+  }
+
+  /* —— masthead —— */
+  .masthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 28px 0 40px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    flex-wrap: wrap;
+  }
+  .masthead__rule { flex: 1; height: 1px; background: var(--line); min-width: 30px; }
+  .masthead__dot { color: var(--terracotta); font-size: 14px; }
+
+  /* —— hero —— */
+  .hero {
+    text-align: center;
+    margin: clamp(30px, 6vw, 70px) 0 clamp(50px, 8vw, 80px);
+  }
+
+  .hero__eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    display: block;
+    margin-bottom: 26px;
+  }
+
+  .hero__title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 80, "opsz" 144, "wght" 380;
+    font-size: clamp(48px, 9vw, 96px);
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin-bottom: 32px;
+  }
+
+  .hero__title em {
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 380;
+    font-style: italic;
+    color: var(--terracotta);
+    font-weight: 400;
+  }
+
+  .hero__lede {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: clamp(18px, 2vw, 22px);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 540px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+
+  /* —— three options —— */
+  .options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(14px, 1.8vw, 24px);
+    margin: 40px 0 64px;
+  }
+
+  .option {
+    background: var(--paper-warm);
+    border: 1.5px solid var(--line);
+    border-radius: 3px;
+    padding: clamp(22px, 2.6vw, 32px) clamp(18px, 2vw, 26px) clamp(26px, 3vw, 36px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: transform 0.35s, box-shadow 0.35s;
+  }
+
+  .option:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 32px rgba(26, 20, 14, 0.08);
+  }
+
+  .option::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--neutral);
+    border-radius: 3px 3px 0 0;
+  }
+
+  .option--battery::before { background: var(--sage); }
+  .option--bundle::before { background: var(--terracotta); }
+
+  .option--recommended {
+    border-color: var(--sage);
+    box-shadow: 0 4px 20px rgba(91, 110, 79, 0.15);
+  }
+
+  .option__badge {
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    background: var(--sage);
+    color: var(--paper);
+    font-family: 'DM Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 5px 11px;
+    border-radius: 999px;
+  }
+
+  .option__num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 400;
+    font-size: 26px;
+    color: var(--neutral);
+    line-height: 1;
+  }
+
+  .option--battery .option__num { color: var(--sage); }
+  .option--bundle .option__num { color: var(--terracotta); }
+
+  .option__name {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 96, "wght" 480;
+    font-size: clamp(22px, 2.6vw, 28px);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+
+  .option__name em {
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 96, "wght" 400;
+  }
+
+  .option__cost {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 144, "wght" 420;
+    font-size: clamp(36px, 4.4vw, 48px);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    margin: 6px 0 0;
+  }
+
+  .option__cost-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+  }
+
+  .option__divider {
+    height: 1px;
+    background: var(--line);
+    margin: 6px 0 4px;
+  }
+
+  .option__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    padding: 5px 0;
+  }
+
+  .option__line-label {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+
+  .option__line-value {
+    font-family: 'DM Mono', monospace;
+    font-size: 13.5px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+
+  .option__line-value--big {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 48, "wght" 500;
+    font-size: 19px;
+    color: var(--ink);
+  }
+
+  .option--battery .option__line-value--big { color: var(--sage-deep); }
+  .option--bundle .option__line-value--big { color: var(--terracotta-deep); }
+
+  .option__pros {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+  }
+
+  .option__pros-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .option__pros ul {
+    list-style: none;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+
+  .option__pros li {
+    padding: 3px 0 3px 16px;
+    position: relative;
+  }
+
+  .option__pros li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--sage);
+    font-weight: 600;
+  }
+
+  .option__pros li.con::before {
+    content: "✗";
+    color: var(--rust);
+  }
+
+  /* —— section header —— */
+  .section {
+    margin: clamp(64px, 8vw, 88px) 0;
+  }
+
+  .section__head {
+    display: flex;
+    align-items: baseline;
+    gap: 22px;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section__num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 400;
+    font-size: clamp(32px, 5vw, 44px);
+    color: var(--terracotta);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .section h2 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 96, "wght" 460;
+    font-size: clamp(26px, 4vw, 36px);
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    flex: 1;
+  }
+
+  .section h2 em { font-style: italic; font-variation-settings: "SOFT" 100, "opsz" 96, "wght" 400; color: var(--terracotta); }
+
+  .section p {
+    font-size: clamp(16.5px, 1.6vw, 18px);
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    max-width: 70ch;
+  }
+  .section p strong { color: var(--ink); font-weight: 600; }
+  .section p em { color: var(--terracotta-deep); font-style: italic; }
+
+  /* —— ledger table —— */
+  .ledger {
+    background: var(--paper-warm);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    overflow-x: auto;
+    margin: 24px 0;
+  }
+
+  .ledger table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+  }
+
+  .ledger th, .ledger td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--line-soft);
+    font-size: 14.5px;
+    vertical-align: top;
+  }
+
+  .ledger thead th {
+    background: var(--paper-deep);
+    font-family: 'DM Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+    font-weight: 500;
+    border-bottom: 2px solid var(--ink);
+    padding: 16px;
+  }
+
+  .ledger thead th.col-now { color: var(--neutral); }
+  .ledger thead th.col-battery { color: var(--sage-deep); }
+  .ledger thead th.col-bundle { color: var(--terracotta-deep); }
+
+  .ledger tbody th {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--ink-soft);
+    width: 32%;
+  }
+
+  .ledger td {
+    font-family: 'DM Mono', monospace;
+    color: var(--ink);
+  }
+
+  .ledger tr.row-emphasis {
+    background: rgba(184, 74, 28, 0.05);
+  }
+
+  .ledger tr.row-emphasis th, .ledger tr.row-emphasis td {
+    font-weight: 600;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .ledger tr.row-section td, .ledger tr.row-section th {
+    background: var(--paper-deep);
+    font-family: 'DM Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--line);
+    font-style: normal;
+  }
+
+  .ledger .val-positive { color: var(--sage-deep); font-weight: 600; }
+  .ledger .val-negative { color: var(--rust); }
+  .ledger .val-best { color: var(--terracotta-deep); font-weight: 600; }
+
+  .ledger small {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 12.5px;
+    color: var(--ink-faded);
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* —— cashflow bars —— */
+  .bars {
+    display: grid;
+    gap: 18px;
+    margin: 28px 0 16px;
+  }
+
+  .bar-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 90px;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .bar-row__label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    line-height: 1.4;
+  }
+
+  .bar-row__label-detail {
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 12px;
+    color: var(--ink-faded);
+    margin-top: 3px;
+    display: block;
+  }
+
+  .bar {
+    height: 38px;
+    background: var(--line-soft);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .bar__fill {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    color: var(--paper);
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .bar__fill--now { background: var(--neutral); }
+  .bar__fill--battery { background: var(--sage); }
+  .bar__fill--bundle { background: var(--terracotta); }
+
+  .bar-row__total {
+    text-align: right;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 48, "wght" 500;
+    font-size: 22px;
+    color: var(--ink);
+    letter-spacing: -0.015em;
+  }
+
+  /* —— callout —— */
+  .callout {
+    background: var(--paper-warm);
+    border-left: 3px solid var(--terracotta);
+    padding: clamp(20px, 3vw, 28px);
+    margin: 28px 0;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .callout__label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .callout h3 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 48, "wght" 480;
+    font-size: clamp(20px, 2.4vw, 24px);
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+
+  .callout p {
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* —— checklist —— */
+  .checklist {
+    margin: 24px 0;
+    counter-reset: check;
+  }
+
+  .checklist__item {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 14px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--line);
+    counter-increment: check;
+  }
+
+  .checklist__item:last-child { border-bottom: 0; }
+
+  .checklist__item::before {
+    content: counter(check, decimal-leading-zero);
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "SOFT" 100, "opsz" 96, "wght" 400;
+    font-size: 24px;
+    color: var(--terracotta);
+    line-height: 1.1;
+  }
+
+  .checklist__item h4 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 48, "wght" 500;
+    font-size: clamp(17px, 2vw, 19px);
+    color: var(--ink);
+    line-height: 1.25;
+    margin-bottom: 4px;
+    letter-spacing: -0.005em;
+  }
+
+  .checklist__item p {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+  }
+
+  /* —— take (recommendation) —— */
+  .take {
+    background: var(--ink);
+    color: var(--paper);
+    padding: clamp(36px, 5vw, 56px);
+    margin: 60px 0 40px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .take::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, var(--terracotta) 0%, transparent 70%);
+    opacity: 0.35;
+  }
+
+  .take__eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-bottom: 22px;
+    display: block;
+    position: relative;
+  }
+
+  .take h3 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 80, "opsz" 144, "wght" 380;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.1;
+    color: var(--paper);
+    margin-bottom: 22px;
+    letter-spacing: -0.02em;
+    position: relative;
+  }
+
+  .take h3 em {
+    font-style: italic;
+    color: #f0c89a;
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 380;
+  }
+
+  .take p {
+    font-size: clamp(17px, 1.9vw, 20px);
+    line-height: 1.55;
+    color: rgba(244, 236, 216, 0.88);
+    margin-bottom: 14px;
+    max-width: 60ch;
+    position: relative;
+  }
+
+  .take p strong { color: #f0c89a; font-weight: 600; }
+  .take p em { font-style: italic; color: #f0c89a; }
+
+  /* —— signoff —— */
+  .signoff {
+    text-align: center;
+    margin: 60px auto 0;
+    padding-top: 36px;
+    border-top: 1px solid var(--line);
+    max-width: 480px;
+  }
+
+  .signoff p {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .signoff__name {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 100, "opsz" 144, "wght" 400;
+    font-style: italic;
+    font-size: 28px;
+    color: var(--terracotta);
+    letter-spacing: -0.01em;
+  }
+
+  .smallprint {
+    font-family: 'DM Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-faded);
+    text-align: center;
+    margin-top: 32px;
+    line-height: 1.8;
+  }
+
+  /* reveal */
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.9s, transform 0.9s; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* —— responsive —— */
+  @media (max-width: 900px) {
+    .options { grid-template-columns: 1fr; gap: 20px; }
+    .bar-row { grid-template-columns: 100px 1fr 80px; }
+  }
+
+  @media (max-width: 540px) {
+    .section__head { gap: 14px; }
+    .bar-row { grid-template-columns: 1fr; }
+    .bar-row__total { text-align: left; margin-left: 14px; }
+  }
+
+  @media print {
+    body { background: white; }
+    .option:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="masthead__rule"></span>
+    <span>Battery options briefing</span>
+    <span class="masthead__dot">✦</span>
+    <span>Hamilton · 13 May 2026</span>
+    <span class="masthead__rule"></span>
+  </header>
+
+  <section class="hero">
+    <span class="hero__eyebrow">three paths · same house · same bills</span>
+    <h1 class="hero__title">Three paths<br><em>forward.</em></h1>
+    <p class="hero__lede">Three real options sitting on the kitchen table. Here's what each one actually costs us, what it gives us back, and the trade-offs we'd be making with each.</p>
+  </section>
+
+  <!-- THREE OPTIONS AT A GLANCE -->
+  <section class="options reveal">
+
+    <!-- OPTION A: Do nothing -->
+    <article class="option option--nothing">
+      <div class="option__num">i.</div>
+      <h2 class="option__name">Stay <em>as we are</em></h2>
+      <div>
+        <span class="option__cost-label">Upfront cost</span>
+        <span class="option__cost">$0</span>
+      </div>
+      <div class="option__divider"></div>
+      <div class="option__line">
+        <span class="option__line-label">Real monthly cost</span>
+        <span class="option__line-value option__line-value--big">$358</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Cash leaving acct</span>
+        <span class="option__line-value">$681 / mo</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Annual cost</span>
+        <span class="option__line-value">$4,300</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">10-year cost (5% inflation)</span>
+        <span class="option__line-value">~$54,000</span>
+      </div>
+
+      <div class="option__pros">
+        <span class="option__pros-label">Trade-offs</span>
+        <ul>
+          <li>No outlay, no commitment</li>
+          <li class="con">Selling solar surplus at 4¢, buying back at 66¢</li>
+          <li class="con">Costs rise with electricity rates</li>
+          <li class="con">No protection against rate hikes</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- OPTION B: Battery only -->
+    <article class="option option--battery option--recommended">
+      <span class="option__badge">Cleanest deal</span>
+      <div class="option__num">ii.</div>
+      <h2 class="option__name">Add a <em>battery</em></h2>
+      <div>
+        <span class="option__cost-label">Net after rebates</span>
+        <span class="option__cost">$15,420</span>
+      </div>
+      <div class="option__divider"></div>
+      <div class="option__line">
+        <span class="option__line-label">Real monthly · yrs 1–5</span>
+        <span class="option__line-value option__line-value--big">$447</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Real monthly · yr 6+</span>
+        <span class="option__line-value option__line-value--big">$182</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Annual yrs 1–5</span>
+        <span class="option__line-value">$5,360</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">10-year cost</span>
+        <span class="option__line-value">~$37,700</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Payback</span>
+        <span class="option__line-value">~6 years</span>
+      </div>
+
+      <div class="option__pros">
+        <span class="option__pros-label">Trade-offs</span>
+        <ul>
+          <li>Captures the 18 kWh/day we already export</li>
+          <li>Inside 10-yr warranty payback</li>
+          <li>~$15-20k better off over 10 years vs doing nothing</li>
+          <li class="con">Replaces our working Sungrow inverter</li>
+          <li class="con">Hinen brand only in AU since 2023</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- OPTION C: Battery + panels -->
+    <article class="option option--bundle">
+      <div class="option__num">iii.</div>
+      <h2 class="option__name">Battery <em>+ 11 panels</em></h2>
+      <div>
+        <span class="option__cost-label">Net after rebates</span>
+        <span class="option__cost">$21,506</span>
+      </div>
+      <div class="option__divider"></div>
+      <div class="option__line">
+        <span class="option__line-label">Real monthly · yrs 1–5</span>
+        <span class="option__line-value option__line-value--big">$465</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Real monthly · yr 6+</span>
+        <span class="option__line-value option__line-value--big">$98</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Annual yrs 1–5</span>
+        <span class="option__line-value">$5,584</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">10-year cost</span>
+        <span class="option__line-value">~$33,420</span>
+      </div>
+      <div class="option__line">
+        <span class="option__line-label">Payback</span>
+        <span class="option__line-value">~7 years</span>
+      </div>
+
+      <div class="option__pros">
+        <span class="option__pros-label">Trade-offs</span>
+        <ul>
+          <li>Best long-term result IF feed-in tariffs hold</li>
+          <li>Future-proof for EV / heat pump</li>
+          <li>Premium AIKO panels, 25-yr warranty</li>
+          <li class="con">75% of new panel output exported at 4¢</li>
+          <li class="con">Vulnerable if NSW feed-in goes to 0¢</li>
+        </ul>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- THE NUMBERS, SIDE BY SIDE -->
+  <section class="section reveal">
+    <div class="section__head">
+      <span class="section__num">i.</span>
+      <h2>The numbers, <em>side by side</em></h2>
+    </div>
+    <p>Every line below is in the same units, same scope, same household. The cleanest like-for-like view we have.</p>
+
+    <div class="ledger">
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th class="col-now">Stay as we are</th>
+            <th class="col-battery">Battery only</th>
+            <th class="col-bundle">Battery + panels</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-section"><th colspan="4">Upfront</th></tr>
+          <tr>
+            <th>System price (inc GST)</th>
+            <td>—</td>
+            <td>$20,872</td>
+            <td>$28,309</td>
+          </tr>
+          <tr>
+            <th>Rebates &amp; subsidies</th>
+            <td>—</td>
+            <td class="val-positive">−$5,452</td>
+            <td class="val-positive">−$6,803</td>
+          </tr>
+          <tr class="row-emphasis">
+            <th>Net amount to finance</th>
+            <td>$0</td>
+            <td>$15,420</td>
+            <td>$21,506</td>
+          </tr>
+
+          <tr class="row-section"><th colspan="4">During the 5-year finance period</th></tr>
+          <tr>
+            <th>Finance repayment</th>
+            <td>—</td>
+            <td>$265 / mo</td>
+            <td>$367 / mo</td>
+          </tr>
+          <tr>
+            <th>Residual electricity bill</th>
+            <td>$358 / mo<small>real usage cost</small></td>
+            <td>$182 / mo</td>
+            <td>$98 / mo</td>
+          </tr>
+          <tr class="row-emphasis">
+            <th>Real monthly cost</th>
+            <td>$358</td>
+            <td>$447</td>
+            <td>$465</td>
+          </tr>
+          <tr>
+            <th>Annual real cost</th>
+            <td>$4,300</td>
+            <td>$5,360</td>
+            <td>$5,584</td>
+          </tr>
+
+          <tr class="row-section"><th colspan="4">After finance ends (year 6 onward)</th></tr>
+          <tr>
+            <th>Finance repayment</th>
+            <td>—</td>
+            <td>$0</td>
+            <td>$0</td>
+          </tr>
+          <tr>
+            <th>Residual electricity bill</th>
+            <td>$358+ / mo<small>rising with rates</small></td>
+            <td class="val-positive">$182 / mo</td>
+            <td class="val-best">$98 / mo</td>
+          </tr>
+          <tr class="row-emphasis">
+            <th>Annual cost from year 6</th>
+            <td>~$4,500+</td>
+            <td class="val-positive">$2,180</td>
+            <td class="val-best">$1,180</td>
+          </tr>
+
+          <tr class="row-section"><th colspan="4">10-year picture</th></tr>
+          <tr>
+            <th>Total electricity + finance, 10 yrs<small>assuming 5% rate inflation</small></th>
+            <td>~$54,000</td>
+            <td class="val-positive">~$37,700</td>
+            <td class="val-best">~$33,420</td>
+          </tr>
+          <tr>
+            <th>Savings vs doing nothing</th>
+            <td>baseline</td>
+            <td class="val-positive">~$16,000</td>
+            <td class="val-best">~$20,500</td>
+          </tr>
+          <tr>
+            <th>Payback period</th>
+            <td>n/a</td>
+            <td>~6 years</td>
+            <td>~7 years</td>
+          </tr>
+          <tr>
+            <th>You own at end</th>
+            <td>nothing new</td>
+            <td>battery + inverter</td>
+            <td>battery + inverter + 5.39 kW panels</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- MONTHLY OUTFLOW VISUAL -->
+  <section class="section reveal">
+    <div class="section__head">
+      <span class="section__num">ii.</span>
+      <h2>What leaves the account <em>each month</em></h2>
+    </div>
+    <p>Two phases worth seeing visually — the 5 years of finance, and then everything after. The "what we actually use" row is the true cost; the rest is just payment scheduling.</p>
+
+    <div class="bars">
+
+      <div class="bar-row">
+        <div class="bar-row__label">Today<span class="bar-row__label-detail">direct debit</span></div>
+        <div class="bar"><div class="bar__fill bar__fill--now" style="width: 100%">$681 / mo</div></div>
+        <div class="bar-row__total">$681</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-row__label">Today<span class="bar-row__label-detail">real usage cost</span></div>
+        <div class="bar"><div class="bar__fill bar__fill--now" style="width: 52.5%">$358 / mo</div></div>
+        <div class="bar-row__total">$358</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-row__label">Battery only<span class="bar-row__label-detail">yrs 1–5 · all-in</span></div>
+        <div class="bar"><div class="bar__fill bar__fill--battery" style="width: 65.6%">$447 / mo</div></div>
+        <div class="bar-row__total">$447</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-row__label">Battery only<span class="bar-row__label-detail">year 6+</span></div>
+        <div class="bar"><div class="bar__fill bar__fill--battery" style="width: 26.7%">$182 / mo</div></div>
+        <div class="bar-row__total">$182</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-row__label">Battery + panels<span class="bar-row__label-detail">yrs 1–5 · all-in</span></div>
+        <div class="bar"><div class="bar__fill bar__fill--bundle" style="width: 68.3%">$465 / mo</div></div>
+        <div class="bar-row__total">$465</div>
+      </div>
+
+      <div class="bar-row">
+        <div class="bar-row__label">Battery + panels<span class="bar-row__label-detail">year 6+</span></div>
+        <div class="bar"><div class="bar__fill bar__fill--bundle" style="width: 14.4%">$98 / mo</div></div>
+        <div class="bar-row__total">$98</div>
+      </div>
+
+    </div>
+
+    <div class="callout">
+      <span class="callout__label">Quick reading guide</span>
+      <h3>The bar lengths tell the story</h3>
+      <p>Right now we pay <strong>$681/mo</strong> via direct debit — but our real usage is only <strong>$358/mo</strong>. The extra $323/mo is building a credit buffer at EnergyAustralia.</p>
+      <p>With either battery option, the monthly cost is <em>slightly higher</em> than what we'd pay just using electricity today — for 5 years. Then it drops dramatically, for the next 5+ years.</p>
+      <p>The deal isn't "magic instant savings." It's "<strong>five years of about the same, then much cheaper for a decade-plus.</strong>"</p>
+    </div>
+  </section>
+
+  <!-- WINTER PROBLEM -->
+  <section class="section reveal">
+    <div class="section__head">
+      <span class="section__num">iii.</span>
+      <h2>The winter <em>problem</em></h2>
+    </div>
+    <p>Teresa's question — "how many more panels would we need for winter?" — is the right one to ask, because it exposes a structural limitation of solar in NSW.</p>
+
+    <div class="ledger">
+      <table>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th class="col-now">August daily</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Household uses</th>
+            <td>~71 kWh / day</td>
+          </tr>
+          <tr>
+            <th>Existing 9.25 kW solar produces</th>
+            <td>~22 kWh / day</td>
+          </tr>
+          <tr class="row-emphasis">
+            <th>Winter deficit (grid imports)</th>
+            <td class="val-negative">~49 kWh / day</td>
+          </tr>
+          <tr>
+            <th>Solar size needed to match winter use</th>
+            <td>~30 kW total</td>
+          </tr>
+          <tr class="row-emphasis">
+            <th>Extra panels required</th>
+            <td class="val-negative">~42 more panels</td>
+          </tr>
+          <tr>
+            <th>What 11 panels would actually add in winter</th>
+            <td>+13 kWh / day</td>
+          </tr>
+          <tr>
+            <th>Remaining winter deficit even with 11 panels</th>
+            <td class="val-negative">~36 kWh / day</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>To <strong>actually cover our winter consumption with solar</strong>, we'd need roughly <strong>three times</strong> our current array — about 60 panels total. That's not realistic (roof, inverter, network export caps all become limiting). Even if it were, in summer we'd be making 6× what we use and selling it back at 4¢ — a different kind of waste.</p>
+
+    <div class="callout">
+      <span class="callout__label">The right approach for winter</span>
+      <h3>You can't out-solar a Hunter winter.</h3>
+      <p>The real lever for winter bills isn't more generation — it's <strong>less consumption</strong>. Look at the August bill: 26 kWh/day of off-peak overnight usage. That's almost certainly the resistive electric hot water system heating up.</p>
+      <p>A <strong>heat pump hot water unit</strong> (~$3–4.5k after rebates) would cut that load by ~70% — saving more than the extra 11 panels would, at half the cost. Heat pump aircon for heating, plus draught seals, would do more again.</p>
+      <p>If we want winter bills lower, we electrify our heat loads with heat pumps. <em>Then</em> the existing solar + battery starts to actually cover winter.</p>
+    </div>
+  </section>
+
+  <!-- BEFORE SIGNING -->
+  <section class="section reveal">
+    <div class="section__head">
+      <span class="section__num">iv.</span>
+      <h2>Before <em>we sign anything</em></h2>
+    </div>
+    <p>Five concrete things to nail down. Each one is either free money on the table or a way to protect the deal we make.</p>
+
+    <div class="checklist">
+
+      <div class="checklist__item">
+        <div>
+          <h4>Switch our EnergyAustralia plan this week</h4>
+          <p>The October bill shows we could save up to <strong>$1,482/year</strong> on a different plan. Free money. Do this regardless of what we choose on the battery.</p>
+        </div>
+      </div>
+
+      <div class="checklist__item">
+        <div>
+          <h4>Get ONE more quote — Sungrow battery on our existing inverter</h4>
+          <p>Ask for a 17 kWh Sungrow SBR or SBH installed on the existing Sungrow SG8K-D inverter, no new panels. If it comes in under ~$13k, take that — same-brand integration, 10+ years AU track record, no wasteful inverter swap.</p>
+        </div>
+      </div>
+
+      <div class="checklist__item">
+        <div>
+          <h4>Get the VPP terms in writing on one page</h4>
+          <p>The $1,500 VPP subsidy has early-termination fees. We need: lock-in period (years), exit fee schedule, event cap per year, minimum reserve kept for us during a discharge event.</p>
+        </div>
+      </div>
+
+      <div class="checklist__item">
+        <div>
+          <h4>Get "17.97 kWh" written on the contract</h4>
+          <p>Not the model number — the actual usable capacity, in writing. The line items only show one module, so we want this explicit.</p>
+        </div>
+      </div>
+
+      <div class="checklist__item">
+        <div>
+          <h4>Ask for the cash price</h4>
+          <p>Brighte's 0% finance often has merchant fees baked in. Ask: "What's the discount if we pay cash?" Could be $1,000–1,500 in our pocket.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THE RECOMMENDATION -->
+  <section class="take reveal">
+    <span class="take__eyebrow">where I'd land</span>
+    <h3>The battery — <em>almost certainly yes</em>.<br>The panels — only if we're electrifying.</h3>
+    <p>The core deal — <strong>17.97 kWh battery, ~$15k after rebates, six-year payback inside a ten-year warranty</strong> — is genuinely worth doing. We're throwing away ~$1,400/year right now in solar surplus at 4¢ feed-in. The battery exists to fix that exact problem, and it does, fast.</p>
+    <p>The <em>panels</em> are a different question. Long-term they pencil out positive (~$21k benefit over 25 years <em>if</em> feed-in tariffs hold). But 75% of the new generation would go to 4¢ exports, and NSW feed-in tariffs are heading downward — already dropped from 5¢ to 4¢ between our two bills. The math is OK, not great.</p>
+    <p>The panels become <strong>strongly worth it</strong> if we're going to <em>electrify</em> — EV in the next 2–3 years, heat pump hot water, heat pump heating. That doubles the panel value. Without that commitment, the marginal $6k is better spent elsewhere — likely on heat pump hot water, which would do more for our winter bills than the panels ever will.</p>
+    <p><strong>My recommendation:</strong> Switch the plan this week. Get the Sungrow comparison quote. Then take whichever battery comes in cheaper, <em>without</em> the panels — unless we genuinely plan to electrify soon. Don't sign tonight.</p>
+  </section>
+
+  <p class="smallprint">prepared 13 may 2026 &nbsp;·&nbsp; based on april &amp; october energyaustralia bills</p>
+
+</div>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }});
+  }, { threshold: 0.06 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
