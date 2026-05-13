@@ -341,6 +341,16 @@
   .section p strong { color: var(--ink); font-weight: 600; }
   .section p em { color: var(--terracotta-deep); font-style: italic; }
 
+  .section > h3 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "SOFT" 60, "opsz" 48, "wght" 500;
+    font-size: clamp(20px, 2.4vw, 25px);
+    line-height: 1.2;
+    margin: 38px 0 14px;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+
   /* —— ledger table —— */
   .ledger {
     background: var(--paper-warm);
@@ -1069,10 +1079,150 @@
     </div>
   </section>
 
-  <!-- BEFORE SIGNING -->
+  <!-- COULD WE GO BIGGER -->
   <section class="section reveal">
     <div class="section__head">
       <span class="section__num">iv.</span>
+      <h2>Could we go <em>bigger?</em></h2>
+    </div>
+    <p>The natural follow-up question: "what if we got a better inverter and more panels?" There's a tempting "just spend more, get more" logic to it. The honest answer: <strong>a bigger inverter alone doesn't help, and even much larger systems still can't solve winter</strong> — they just get expensive fast.</p>
+
+    <h3>What "bigger inverter" actually means for us</h3>
+
+    <p>Our existing Sungrow SG8K-D is <strong>single-phase</strong> 8 kW. That single-phase constraint is the real ceiling, and going past it gets expensive.</p>
+
+    <div class="ledger">
+      <table>
+        <thead>
+          <tr>
+            <th>Inverter size</th>
+            <th>Phase</th>
+            <th>What it would require</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>8 kW (current Sungrow)</th>
+            <td>Single</td>
+            <td>Already installed — works fine</td>
+          </tr>
+          <tr>
+            <th>10 kW (proposed Hinen)</th>
+            <td>Single</td>
+            <td>At soft limit for NSW — likely needs export limit of 5 kW</td>
+          </tr>
+          <tr>
+            <th>15–20 kW</th>
+            <td>Three-phase</td>
+            <td>Major upgrade: new mains, switchboard, meter, network approval</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Going from 8 kW → 10 kW (the bundled Hinen proposal) is a marginal change — both inverters are ~98% efficient. A real upgrade would be three-phase, which costs <strong>$3,000–8,000 on its own</strong> before you've even bought the bigger inverter.</p>
+
+    <h3>What "more panels + bigger inverter" actually buys in winter</h3>
+
+    <div class="ledger">
+      <table>
+        <thead>
+          <tr>
+            <th>Scenario</th>
+            <th>System size</th>
+            <th>Winter daily output</th>
+            <th>Extra cost vs battery-only</th>
+            <th>Winter deficit left</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Today</th>
+            <td>9.25 kW</td>
+            <td>22 kWh</td>
+            <td>—</td>
+            <td class="val-negative">49 kWh/day</td>
+          </tr>
+          <tr>
+            <th>Current proposal</th>
+            <td>14.6 kW · 10 kW inverter</td>
+            <td>35 kWh</td>
+            <td>+$6,000</td>
+            <td class="val-negative">36 kWh/day</td>
+          </tr>
+          <tr>
+            <th>Three-phase upgrade</th>
+            <td>20 kW · 15 kW three-phase</td>
+            <td>48 kWh</td>
+            <td>+$25,000+</td>
+            <td class="val-negative">23 kWh/day</td>
+          </tr>
+          <tr>
+            <th>Fully match winter (theory)</th>
+            <td>30 kW · 25 kW three-phase</td>
+            <td>71 kWh</td>
+            <td>+$50,000+</td>
+            <td>0 (but blocked by network export caps)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Even spending an extra <strong>$25,000</strong> on a three-phase 20 kW system, we'd still be importing 23 kWh/day from the grid in August. And in summer, that same system would produce <strong>100+ kWh/day</strong> we couldn't use — exports at 4¢, assuming the network even allows it (most NSW connections cap export at 5–10 kW).</p>
+
+    <div class="callout">
+      <span class="callout__label">The real lever sits on the other side</span>
+      <h3>Reduce winter consumption, don't try to out-generate it.</h3>
+      <p>The same money spent on a <strong>heat pump hot water unit</strong> would save more on winter bills than any feasible panel addition. Look at our August bill: 26 kWh/day of off-peak overnight usage — almost certainly the resistive electric hot water heating up. Replace it with a heat pump and that load drops to about 8 kWh/day.</p>
+    </div>
+
+    <div class="ledger">
+      <table>
+        <thead>
+          <tr>
+            <th>Demand-side upgrade</th>
+            <th>Cost (after rebates)</th>
+            <th>Winter impact</th>
+            <th>Annual savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Heat pump hot water</th>
+            <td>~$3,000–4,500</td>
+            <td>Cuts 26 kWh/day → ~8 kWh</td>
+            <td class="val-positive">~$700–900 / yr</td>
+          </tr>
+          <tr>
+            <th>Reverse-cycle aircon (for heating)</th>
+            <td>~$2,500–4,000 / zone</td>
+            <td>60–70% less energy per unit of heat</td>
+            <td class="val-positive">~$400–800 / yr</td>
+          </tr>
+          <tr>
+            <th>Roof insulation + draught seals</th>
+            <td>~$500–1,500</td>
+            <td>15–25% less heating need</td>
+            <td class="val-positive">~$200–400 / yr</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>A heat pump hot water unit alone delivers more winter saving than the 11 extra panels would — at half the cost, with no inverter swap and no three-phase upgrade.</p>
+
+    <h3>The practical answer</h3>
+
+    <p><strong>Bigger inverter on its own:</strong> doesn't move the needle. The 8 kW we have is fine for the panels we have.</p>
+    <p><strong>Bigger inverter + 11 more panels (the current bundle):</strong> small marginal benefit, but most of the extra production is 4¢ exports.</p>
+    <p><strong>Three-phase + 20 kW system:</strong> ~$25k on top of the battery for modest winter improvement and big summer waste. Only worthwhile if we're committing to going fully electric — multiple EVs, electric heating, electric hot water.</p>
+    <p><strong>Best use of similar money:</strong> battery + heat pump hot water + stay single-phase. ~$18–20k all-up, with a bigger winter impact than the inverter/panels path delivers.</p>
+  </section>
+
+  <!-- BEFORE SIGNING -->
+  <section class="section reveal">
+    <div class="section__head">
+      <span class="section__num">v.</span>
       <h2>Before <em>we sign anything</em></h2>
     </div>
     <p>Five concrete things to nail down. Each one is either free money on the table or a way to protect the deal we make.</p>
